@@ -1,0 +1,42 @@
+#root{overflow: hidden;}
+body{overflow: hidden;}
+nav{position: absolute;color: white;width: 100%;margin-top: 20px;z-index: 999;}
+nav a{color: inherit;text-decoration: none;margin: 0px 30px;font-size: 16px;}
+nav a:last-child{background-color: white;padding: 8px 20px;color: black;border-radius: 1.5em;}
+.navbar-brand{font-size: 36px !important;}
+video{width: 100vw;}
+img{width: 100vw;object-fit: cover;height: 100vh;}
+
+/* Text-area */
+.text-area{position: absolute;top: 35%;z-index: 99; width: 100%;}
+.text-area h2{color: white;font-size: 36px;font-size: 80px;font-weight: 400;}
+.text-area h3{color: white;background-color: white;color: black;width: 295px;font-weight: 100;border-radius: 5em;font-size: 18px;margin-top: 50px;padding-right: 0px !important;display: flex;justify-content: space-around;align-items: center;padding-top: 4px;padding-bottom: 4px;padding-left: 10px;}
+.text-area img{height: 50px;transform: translateX(15px);width: 50px;}
+.text-area button{width: 15px;height: 15px;background-color: rgb(230, 230, 230);border-radius: 50%;border: 0px;outline: 0px;margin-right: 15px;transform: translateY(50px);box-sizing: 5px 10px 40px rgb(0,0,0,.5);}
+.text-area button.active{background-color: #FF5858;}
+
+@keyframes fadeIn{
+    from {
+        filter: brightness(0);
+    }
+    to {
+        filter: brightness(1);
+    }
+}
+.bi-play{position: absolute;right: 0;bottom: -5rem;color: white;font-size: 55px;font-weight: 100;display: flex;flex-direction: row;align-items: center;cursor: pointer;animation: scaleAnimation 3s infinite;}
+.bi-play::after{content:"Tanıtım Videosu";font-size: 12px;}
+.fade-in{animation: fadeIn 1200ms ease-in-out;}
+video{width: 100vw;height: 100vh;object-fit: cover;}
+video source{width: 100%;}
+
+@keyframes scaleAnimation {
+    0% {
+      transform: scale(0.8);
+    }
+    50% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
